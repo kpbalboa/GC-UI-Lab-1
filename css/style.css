@@ -1,0 +1,103 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(20, 14, 71);
+}
+img {
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  max-width: 50px;
+}
+#signInButton {
+  position: relative;
+  top: -10px;
+}
+.menu {
+  display: flex;
+  color: #fff;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.logo {
+  flex: 1;
+  margin: 15px 0px 0px 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  display: flex;
+  color: rgb(20, 14, 71);
+  background-color: #ccc;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  max-width: 100px;
+  align-content: center;
+  justify-content: center;
+}
+.button:hover {
+  background-color: #aaaaaa;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+input {
+  border: none;
+  border-bottom: 4px solid #555;
+  background-color: #ccc;
+  padding: 11px;
+  border-radius: 10px;
+}
+.content {
+  background-color: white;
+  color: rgb(177, 177, 88);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+@media only screen and (min-width: 786px) {
+  body {
+    /* padding-bottom: 100px; */
+  }
+  .content {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  form {
+    margin-left: 40px;
+    flex: 1;
+    margin-right: 40px;
+    max-width: 500px;
+  }
+  .contacts {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .contact {
+    margin: 20px;
+  }
+  img {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 150px;
+  }
+}
